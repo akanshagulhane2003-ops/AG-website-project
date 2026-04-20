@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="AutoParts Pro - Quality automotive parts, brakes, batteries, tires, and accessories">
+<title>AutoParts Pro - Premium Automotive Parts & Accessories</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<!-- Header -->
+<header class="header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">🔧 AutoParts<span>Pro</span></a>
+    <div class="search-bar">
+      <input type="text" id="globalSearch" placeholder="Search parts by name, SKU, or vehicle...">
+      <button onclick="performSearch()">🔍</button>
+    </div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="products.html">Shop</a>
+      <a href="account.html">Account</a>
+      <a href="cart.html" class="cart-link">Cart <span id="cartCount" class="cart-count">0</span></a>
+    </nav>
+  </div>
+  <div class="category-bar container">
+    <a href="products.html?cat=brakes">Brakes</a>
+    <a href="products.html?cat=batteries">Batteries</a>
+    <a href="products.html?cat=tires">Tires</a>
+    <a href="products.html?cat=engine">Engine</a>
+    <a href="products.html?cat=lights">Lights</a>
+    <a href="products.html?cat=electronics">Electronics</a>
+    <a href="products.html?cat=tools">Tools</a>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="container">
+    <h1>Premium Parts for Every Ride</h1>
+    <p>Shop 50,000+ certified auto parts. Free shipping over $99.</p>
+    <div class="vehicle-finder">
+      <h3>Find Parts for Your Vehicle</h3>
+      <div class="finder-grid">
+        <select id="vehMake"><option value="">Make</option></select>
+        <select id="vehModel"><option value="">Model</option></select>
+        <select id="vehYear"><option value="">Year</option></select>
+        <button onclick="findByVehicle()">Find Parts</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Featured -->
+<section class="section container">
+  <h2>🔥 Featured Products</h2>
+  <div id="featuredProducts" class="product-grid"></div>
+</section>
+
+<!-- Categories -->
+<section class="section container">
+  <h2>Shop by Category</h2>
+  <div class="category-grid">
+    <a href="products.html?cat=brakes" class="cat-card">🛑<h3>Brakes</h3></a>
+    <a href="products.html?cat=batteries" class="cat-card">🔋<h3>Batteries</h3></a>
+    <a href="products.html?cat=tires" class="cat-card">🛞<h3>Tires</h3></a>
+    <a href="products.html?cat=engine" class="cat-card">⚙️<h3>Engine</h3></a>
+    <a href="products.html?cat=lights" class="cat-card">💡<h3>Lights</h3></a>
+    <a href="products.html?cat=electronics" class="cat-card">📟<h3>Electronics</h3></a>
+    <a href="products.html?cat=tools" class="cat-card">🔧<h3>Tools</h3></a>
+    <a href="products.html?cat=accessories" class="cat-card">✨<h3>Accessories</h3></a>
+  </div>
+</section>
+
+<!-- New Arrivals -->
+<section class="section container">
+  <h2>✨ New Arrivals</h2>
+  <div id="newArrivals" class="product-grid"></div>
+</section>
+
+<!-- Promotions -->
+<section class="promo-banner">
+  <div class="container">
+    <h2>🎉 Summer Sale - Up to 40% Off!</h2>
+    <p>Limited time offers on brakes, batteries, and more.</p>
+    <a href="products.html?sale=true" class="btn-primary">Shop Sale</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div><h4>AutoParts Pro</h4><p>Your trusted source for quality automotive parts since 2010.</p></div>
+    <div><h4>Customer Service</h4><a href="#">Contact Us</a><a href="#">Shipping</a><a href="#">Returns</a></div>
+    <div><h4>Company</h4><a href="#">About</a><a href="#">Careers</a><a href="#">Affiliates</a></div>
+    <div><h4>Connect</h4><a href="#">Facebook</a><a href="#">Twitter</a><a href="#">Instagram</a></div>
+  </div>
+  <div class="footer-bottom">© 2025 AutoParts Pro. All rights reserved.</div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

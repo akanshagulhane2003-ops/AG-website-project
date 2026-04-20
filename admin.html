@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Admin - AutoParts Pro</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="header admin-header">
+  <div class="container header-inner">
+    <a href="admin.html" class="logo">🔧 Admin Panel</a>
+    <nav class="nav">
+      <a href="index.html">View Site</a>
+    </nav>
+  </div>
+</header>
+
+<div class="container admin-layout">
+  <aside class="admin-sidebar">
+    <button class="active" onclick="showAdminTab('dashboard')">📊 Dashboard</button>
+    <button onclick="showAdminTab('products')">📦 Products</button>
+    <button onclick="showAdminTab('orders')">🧾 Orders</button>
+    <button onclick="showAdminTab('customers')">👥 Customers</button>
+    <button onclick="showAdminTab('inventory')">📋 Inventory</button>
+    <button onclick="showAdminTab('marketing')">📣 Marketing</button>
+    <button onclick="showAdminTab('reports')">📈 Reports</button>
+  </aside>
+  <main id="adminContent" class="admin-main"></main>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>
